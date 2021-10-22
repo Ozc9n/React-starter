@@ -1,25 +1,25 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-function App() {
-    // ? JSX ile html arasındaki farklar 
-    // *1. Tek bir ana div icerisinde kullaniliyor .
-    // !2. Style ozellikleri yaparken key value sekli yazim
-    // *3.JSX icerisine js kodları entegre edebiliyoruz.
-    // !4.HTML attributeleri icin camelCase yazim sekli kullaniliyor.
+import Card from './components/card.js';
 
-    // ?
-    const str1 = "Click ";
-    const str2 = "Me";
-
-    return (
-    <div>
-        <button type="button" style={{padding:'10px', color: 'white', backgroundColor: 'blue', border: '2px solid yellow'}}>{str1.concat(str2)}</button>  
-        {/* <button type="button" style={{padding:'10px', color: 'white', backgroundColor: 'blue', border: '2px solid yellow'}}>JSX button</button> */}
-    </div>
-    );
+const App = () => {
+       return(
+        <div>
+            <div className="card-group">
+                <Card cardTitle="Card Title 1"/>
+                <Card cardTitle="Card Title 2"/>
+                <Card cardTitle="Card Title 3"/>
+            </div>
+        </div>
+       );
 }
+
 ReactDOM.render(
     <App />,
     document.getElementById("root")
-);
+)
+
+
+
+

@@ -28,10 +28,3 @@ Card.propTypes = {
 export default Card;
 
 
-/*
-First Class Function
-const Test = function () {
-    console.log("Test First Class");
-}
-Test()
-*/
